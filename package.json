@@ -4,6 +4,7 @@
   "description": "A React wrapper around vizceral",
   "main": "dist/vizceral.js",
   "scripts": {
+    "prepare": "npm run build",
     "build": "npm run copy:css && webpack --bail && webpack --bail -p",
     "doc": "./docs.js ./src/vizceral.jsx",
     "lint": "eslint src --ext .js --ext .jsx --fix",
